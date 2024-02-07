@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    color: #fff; /* Texte blanc */
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Fond noir avec motif */
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2019/06/6-heart-pattern-2.png'); /* Chemin de l'image de motif */
+    background-color: #000;
+    background-image: url('https://www.onlygfx.com/wp-content/uploads/2019/06/6-heart-pattern-2.png');
 }
 
 .container {
@@ -15,13 +15,16 @@ body {
     height: 100vh;
 }
 
-h1 {
-    color: #cc3366;
-    margin-top: 20px; /* Espacement du titre par rapport au haut de la page */
+.logo {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 200px;
 }
 
 .wheel {
-    background-color: #550033; /* Fond des roues de choix en rouge foncé */
+    background-color: #550033;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -39,13 +42,18 @@ ul li {
     margin: 10px 0;
     cursor: pointer;
     transition: transform 0.3s ease;
-    background-color: #770044; /* Nuance de rose foncé pour les cases */
+    background-color: #770044;
     padding: 10px;
     border-radius: 5px;
 }
 
 ul li:hover {
     transform: scale(1.1);
+}
+
+ul li.selected {
+    background-color: #fff;
+    color: #000;
 }
 
 button {
