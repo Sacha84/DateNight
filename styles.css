@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2019/06/6-heart-pattern-2.png');
+    background-image: url('heart-pattern.png');
 }
 
 .container {
@@ -21,6 +21,12 @@ body {
 
 .logo img {
     width: 200px;
+}
+
+.wheels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permettre le passage à la ligne si l'espace est insuffisant */
 }
 
 .wheel {
